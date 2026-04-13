@@ -1,6 +1,6 @@
 # ZN_M2 路由器
 
-##### ZN_M2 路由器固件
+##### 路由器固件源码
 
 [https://github.com/qosmio/nss-packages](https://github.com/qosmio/nss-packages/commits/)
 
@@ -16,7 +16,7 @@
 
 [openwrt/sdk/docker](https://hub.docker.com/r/openwrt/sdk/tags?name=aarch64_cortex-a53-24)
 
-##### 路由器插件
+##### 路由器插件源码
 
 [https://github.com/pymumu/smartdns](https://github.com/pymumu/smartdns/commits/)
 
