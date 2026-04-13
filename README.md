@@ -1,6 +1,6 @@
 # router
 
-##### Firmware for router
+##### ZN_M2 路由器固件
 
 [https://github.com/qosmio/nss-packages](https://github.com/qosmio/nss-packages/commits/)
 
@@ -16,7 +16,7 @@
 
 [openwrt/sdk/docker](https://hub.docker.com/r/openwrt/sdk/tags?name=aarch64_cortex-a53-24)
 
-##### Nightly builds for router
+##### 路由器插件
 
 [https://github.com/pymumu/smartdns](https://github.com/pymumu/smartdns/commits/)
 
@@ -30,4 +30,4 @@
 
 [https://github.com/XIU2/CloudflareSpeedTest](https://github.com/XIU2/CloudflareSpeedTest/commits/master/)
 
-##### 默认IP地址192.168.1.1，无密码，支持nss硬件加速，插件主要有lucky、zerotier、homeproxy，无Wi-Fi，无USB，其他各版本有小插件、主题和内核版本的变化。
+##### 默认IP地址192.168.1.1，无密码，无Wi-Fi，无USB，支持nss硬件加速。插件主要有lucky、zerotier、homeproxy等。
