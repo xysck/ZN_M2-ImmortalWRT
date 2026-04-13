@@ -10,7 +10,7 @@ function git_sparse_clone() {
   cd .. && rm -rf $repodir
 }
 
-# 取消（注释） feed 源
+# 取消自带的 helloworld 源
 # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # 添加科学上网插件源
