@@ -27,4 +27,3 @@ git clone --depth=1 https://github.com/vernesong/OpenClash package/luci-app-open
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
-
