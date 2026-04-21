@@ -8,9 +8,9 @@ env:
   REPO_URL: https://github.com/VIKINGYFY/immortalwrt
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: ZN_M2.config
-  DIY_P1_SH: diy-part1-ZN_M2.sh
-  DIY_P2_SH: diy-part2-ZN_M2.sh
+  CONFIG_FILE: CMIOT_AX18.config
+  DIY_P1_SH: diy-part1.sh
+  DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
@@ -162,9 +162,9 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled() && github.event.inputs.only_config != 'true'
       run: |
-        echo "release_tag=$(date +"%Y.%m.%d-%H.%M")_ZN_M2-NOWIFI" >> $GITHUB_OUTPUT
+        echo "release_tag=$(date +"%Y.%m.%d-%H.%M")_CMIOT_AX18-NOWIFI" >> $GITHUB_OUTPUT
         touch release.txt
-        echo "ZN_M2-NOWIFI firmware" >> release.txt
+        echo "CMIOT_AX18-NOWIFI firmware" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload firmware to release
