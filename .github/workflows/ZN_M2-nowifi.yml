@@ -3,16 +3,6 @@ name: Build ZN_M2-NOWIFI
 on:
   repository_dispatch:
   workflow_dispatch:
-    inputs:
-      ax18_or_m2:
-        description: 'ax18_or_m2? (ax18/m2)'
-        required: true
-        default: 'm2'
-      only_config:
-        description: "only_config?"
-        required: false
-        default: false
-        type: boolean
 
 env:
   REPO_URL: https://github.com/VIKINGYFY/immortalwrt
@@ -43,11 +33,6 @@ jobs:
 
     - name: Checkout
       uses: actions/checkout@main
-
-    - name: ax18_or_m2
-      if: contains('ax18.AX18', github.event.inputs.ax18_or_m2)
-      run: |
-        sed -i "s/CONFIG_TARGET_qualcommax_ipq60xx_DEVICE_zn_m2=y/CONFIG_TARGET_qualcommax_ipq60xx_DEVICE_cmiot_ax18=y/g" ZN_M2.config
 
     - name: Clone source code
       working-directory: /workdir
