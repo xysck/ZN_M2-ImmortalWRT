@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# 将默认的ZN_M2路由器修改为cmiot_AX18
+# sed -i "s/CONFIG_TARGET_qualcommax_ipq60xx_DEVICE_zn_m2=y/CONFIG_TARGET_qualcommax_ipq60xx_DEVICE_cmiot_ax18=y/g" ZN_M2.config
+
 # 修改默认 IP
 sed -i 's/192.168.1.1/192.168.1.1/g' package/base-files/files/bin/config_generate
 
